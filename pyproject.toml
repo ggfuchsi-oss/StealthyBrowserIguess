@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stealth-browser"
+version = "1.0.0"
+description = "A stealth Chromium browser with 75+ fingerprint patches and REST API"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Stealth Browser Team"}
+]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ggfuchsi-oss/StealthyBrowserIguess"
+Repository = "https://github.com/ggfuchsi-oss/StealthyBrowserIguess"
+
+[project.scripts]
+stealth-browser = "stealth_browser.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["stealth_browser*"]
+
+[tool.setuptools.package-data]
+stealth_browser = ["bin/*.exe", "patches/*.js", "config.json"]
