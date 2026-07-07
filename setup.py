@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name="stealth-browser",
+    name="stealthy-browser",
     version="1.0.0",
     author="Stealth Browser Team",
     description="A stealth Chromium browser with 75+ fingerprint patches and REST API. Bypasses Akamai, PerimeterX, Kasada, Cloudflare, reCAPTCHA.",
@@ -15,7 +15,7 @@ setup(
     url="https://github.com/ggfuchsi-oss/StealthyBrowserIguess",
     packages=find_packages(),
     package_data={
-        "stealth_browser": [
+        "stealthy_browser": [
             "bin/*.exe",
             "patches/*.js",
             "config.json",
@@ -36,7 +36,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "stealth-browser=stealth_browser.cli:main",
+            "stealthy-browser=stealthy_browser.cli:main",
         ],
     },
 )

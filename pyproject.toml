@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "stealth-browser"
+name = "stealthy-browser"
 version = "1.0.0"
 description = "A stealth Chromium browser with 75+ fingerprint patches and REST API"
 readme = "README.md"
@@ -21,10 +21,10 @@ Homepage = "https://github.com/ggfuchsi-oss/StealthyBrowserIguess"
 Repository = "https://github.com/ggfuchsi-oss/StealthyBrowserIguess"
 
 [project.scripts]
-stealth-browser = "stealth_browser.cli:main"
+stealthy-browser = "stealthy_browser.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["stealth_browser*"]
+include = ["stealthy_browser*"]
 
 [tool.setuptools.package-data]
-stealth_browser = ["bin/*.exe", "patches/*.js", "config.json"]
+stealthy_browser = ["bin/*.exe", "patches/*.js", "config.json"]
