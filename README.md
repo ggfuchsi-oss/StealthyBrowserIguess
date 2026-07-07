@@ -19,7 +19,7 @@ A stealth Chromium browser with 75+ fingerprint patches and REST API. Bypasses A
 ## Installation
 
 ```bash
-pip install stealth-browser
+pip install stealthy-browser
 ```
 
 ## Quick Start
@@ -50,19 +50,19 @@ print(browser.get_anti_bot_status())
 
 ```bash
 # Start server
-stealth-browser start
+stealthy-browser start
 
 # Scrape a URL
-stealth-browser scrape "https://www.amazon.com/s?k=ps5+pro"
+stealthy-browser scrape "https://www.amazon.com/s?k=ps5+pro"
 
 # Take screenshot
-stealth-browser screenshot "https://www.amazon.com/s?k=ps5+pro" --output amazon.png
+stealthy-browser screenshot "https://www.amazon.com/s?k=ps5+pro" --output amazon.png
 
 # Check fingerprint
-stealth-browser fingerprint
+stealthy-browser fingerprint
 
 # Check anti-bot status
-stealth-browser anti-bot
+stealthy-browser anti-bot
 ```
 
 ## API Endpoints
