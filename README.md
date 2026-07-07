@@ -1,6 +1,6 @@
 # 🛡️ Stealthy Browser
 
-> A Chromium fork we compiled from source at 3 AM, patched 75+ fingerprints at the binary level, bypassed every anti-bot system we could find, and then spent 45 minutes debugging a Go struct literal. Welcome to the project.
+> A Chromium fork we compiled from source at 3 AM, patched 75+ fingerprints at the binary level, bypassed some of the hardest anti-bot systems in production, and then spent 45 minutes debugging a Go struct literal. Welcome to the project.
 
 A Chromium fork compiled from source and patched at the source level to remove the fingerprint gap that separates automated browsers from real ones — then wrapped in a REST API so you can actually use it.
 
@@ -60,7 +60,7 @@ Cleared on SteamDB and Wikipedia. Cloudflare's own marketing site also passed, t
 
 ### reCAPTCHA v3 — 0.9 score
 
-Scored **0.9 out of a maximum of 1.0** on a v3 test page — a strong human-range score (v3 is pure behavior/fingerprint, so there's nothing to "solve," only to look real). Not the max, but high. For context, we also tested the browser against a real human's score and got 0.7. So yes, our browser is "more human than human" according to Google. Take that as you will.
+Scored **0.9 out of a maximum of 1.0** on a v3 test page — a strong human-range score (v3 is pure behavior/fingerprint, so there's nothing to "solve," only to look real). Not the max, but high. (A real human on the same test scored 0.7 — make of that what you will.)
 
 ### bot.sannysoft.com — 57/57
 
@@ -260,13 +260,13 @@ The C++ source patches live against the Chromium tree and are applied at build t
 
 This exists to study how modern bot detection works and to show where source-level fingerprinting beats runtime approaches. Use it for detection research, testing your own systems, privacy work, and understanding fingerprinting — the things published anti-detect projects exist for.
 
-Don't point it at account access, credential flows, purchases, or anything that turns "does my fingerprint hold" into causing someone a problem. Keeping it in capability-testing territory is what makes it research instead of a liability — for the project and for you. We're not your parents, but we're also not going to help you do anything stupid.
+Don't point it at account access, credential flows, purchases, or anything that turns "does my fingerprint hold" into causing someone a problem. Keeping it in capability-testing territory is what makes it research instead of a liability — for the project and for you.
 
 ---
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Do whatever you want with it. Just don't blame us if you get caught.
+MIT — see [LICENSE](LICENSE). Do whatever you want with it. Just keep it interesting.
 
 ---
 
